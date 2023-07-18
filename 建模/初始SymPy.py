@@ -28,7 +28,7 @@ from sympy import *
 
 # 数学公式
 x = symbols("x")
-#
+
 eq = 2 * x**3 + 5 * x - 4
 print(eq.args)
 print(eq.args[2].args)
