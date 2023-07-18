@@ -7,14 +7,14 @@
     Describe:
     -*- coding: utf-8 -*-
 """
-import cv2
 import numpy as np
 import math
+import cv2
 
 # 将图片文件命名为fy.jpg,与程序放在同一目录下
 img = cv2.imread('fy.jpg')
 rows, cols, chnl = img.shape
-x1 = np.linspace(1, 90, 200)
+x1 = np.linspace(0, 90, 200)
 data1 = []
 for jiao in x1:
     # 旋转参数：旋转中心，旋转角度，scale
@@ -45,9 +45,9 @@ for jiao in x1:
         op1 = math.pow(data[0][0] - data[1][0], 2) + math.pow(data[0][1] - data[1][1], 2)
         op2 = math.pow(data[0][0] - data[2][0], 2) + math.pow(data[0][1] - data[2][1], 2)
         data = []
-        if op1 > 10 and op1 != 98596:
+        if op1 > 10 and op1 != 98596 and jiao != 0:
             data1.append([jiao, abs((op1 / op2) - 1), op1, op2])
 data1.sort()
 # 正方形的边长
-length = int(math.sqrt(data1[0][2]))
+length = float(math.sqrt(data1[2][2]))
 print(f"旋转角度为{data1[0][0]}, 正方形的边长为{length}")
