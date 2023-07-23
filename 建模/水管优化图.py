@@ -2,7 +2,7 @@ import csv
 
 import networkx as nx
 import pandas as pd
-from matplotlib import pyplot as plt
+from pylab import *
 
 
 class MiniTree(object):
@@ -40,26 +40,29 @@ class MiniTree(object):
 
 
 if __name__ == '__main__':
+    mpl.rcParams['font.sans-serif'] = ['SimHei']
     list1 = [0, 127, 68, 138, 107, 116, 11, 61, 86, 10, 129, 76, 177, 21, 161, 37]
+    list1_n = [i not in list1 for i in range(181)]
     df = pd.read_excel("标签.xlsx")
-
 
     with open("距离.csv", encoding="utf-8") as f:
         rows = [row for row in csv.reader(f)][1::]
     list3 = []
     pos = {}
     # 一级点
-    for x in range(len(list1)-4):
+    for x in range(len(list1)):
         if x == 0:
             dis = []
             for i in list1:
                 col = []
                 for j in list1:
-                    col.append(float(rows[i][j+1]))
+                    col.append(float(rows[i][j + 1]))
                 dis.append(col)
             mini_tree = MiniTree(list1, dis)
             list2 = mini_tree.create_mini_tree(0)
-            pos = {0: [26, 31], 127: [7, 8], 68: [31, 41], 138: [15, 23], 107: [7, 34], 116: [27, 19], 11: [41, 31], 61: [35, 51], 86: [24, 49], 10: [36, 25], 129: [5, 17], 76: [18, 41], 177: [42, 43], 21: [24, 30], 161: [35, 15], 37: [18, 14]}
+            pos = {0: [26, 31], 127: [7, 8], 68: [31, 41], 138: [15, 23], 107: [7, 34], 116: [27, 19], 11: [41, 31],
+                   61: [35, 51], 86: [24, 49], 10: [36, 25], 129: [5, 17], 76: [18, 41], 177: [42, 43], 21: [24, 30],
+                   161: [35, 15], 37: [18, 14]}
             list3.extend(list2)
 
         else:
@@ -73,22 +76,26 @@ if __name__ == '__main__':
                     col.append(float(rows[i1][j1+1]))
                 dis.append(col)
             for z in li[1::]:
-                pos[z] = list(df1.loc[z, ["X坐标", "Y坐标"]])
+                pos[int(z)] = list(df1.loc[z, ["X坐标", "Y坐标"]])
 
             mini_tree = MiniTree(li, dis)
             list2 = mini_tree.create_mini_tree(0)
             list3.extend(list2)
 
-
     G = nx.DiGraph()
     G.add_weighted_edges_from(list3)
     G.add_edge(86, 53, weight=3.16)
     G.remove_edge(7, 53)
-    # pos = {0: [26, 31], 127: [7, 8], 68: [31, 41], 138: [15, 23], 107: [7, 34], 116: [27, 19], 11: [41, 31], 61: [35, 51], 86: [24, 49], 10: [36, 25], 129: [5, 17], 76: [18, 41], 177: [42, 43], 21: [24, 30], 161: [35, 15], 37: [18, 14]}
+    # pos = {0: [26, 31], 127: [7, 8], 68: [31, 41], 138: [15, 23], 107: [7, 34], 116: [27, 19], 11: [41, 31],
+    #        61: [35, 51], 86: [24, 49], 10: [36, 25], 129: [5, 17], 76: [18, 41], 177: [42, 43], 21: [24, 30],
+    #        161: [35, 15], 37: [18, 14]}
     nx.draw(G, pos, with_labels=True)
-
+    nx.draw_networkx_nodes(G, pos, nodelist=list1[:1], node_color="red", label="中心供水点")
+    nx.draw_networkx_nodes(G, pos, nodelist=list1[1:], label="一级供水点")
+    nx.draw_networkx_nodes(G, pos, nodelist=list1_n, node_color="yellow", label="二级供水点")
+    plt.legend()
     # 二级点
-    # plt.show(）
+    # plt.show()
 
     # 求解一级管道的长度
     length1 = 0
@@ -119,10 +126,4 @@ if __name__ == '__main__':
     print(money)
 
     print(length1 + length2)
-
-
-
-
-
-
-
+    print(list3)
