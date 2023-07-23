@@ -31,7 +31,7 @@ class MiniTree(object):
 
 if __name__ == '__main__':
     mpl.rcParams['font.sans-serif'] = ['SimHei']
-    df = pd.read_excel("181个坐标点表.xlsx")
+    df = pd.read_excel("坐标.xlsx")
     num = [j for j in df["序号"]]
     x = [j for j in df["X坐标"]]
     y = [j for j in df["Y坐标"]]
@@ -51,18 +51,20 @@ if __name__ == '__main__':
 
     df1 = pd.DataFrame(distance, columns=column)
 
-    df1.to_csv("181个坐标点距离表.csv", index=False)
+    df1.to_csv("距离.csv", index=False)
     # 修正前的
     # 中心点和一级点的序号
     list1 = [0, 127, 68, 138, 107, 116, 11, 61, 86, 10, 129, 76, 177, 21, 161, 37]
     list1_n = [i for i in range(181) if i not in list1]
 
+
+
     # 修正后的
     list_n1 = [0, 127, 68, 138, 107, 116, 11, 61, 86, 10, 129, 76, 177, 21, 161, 37, 45, 91, 53, 147, 83]
     list1_nn = [i for i in range(181) if i not in list_n1]
-    df_n = pd.read_excel("聚类后的181个坐标点表.xlsx")
+    df_n = pd.read_excel("标签.xlsx")
 
-    with open("181个坐标点距离表.csv", encoding="utf-8") as f:
+    with open("距离.csv", encoding="utf-8") as f:
         rows = [row for row in csv.reader(f)][1::]
 
     list3 = []
