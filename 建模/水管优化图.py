@@ -103,7 +103,6 @@ if __name__ == '__main__':
             list3.extend(list2)
 
     # 修正前的图
-    """
     G = nx.DiGraph()
     G.add_weighted_edges_from(list3)
     nx.draw(G, pos, with_labels=True)
@@ -112,7 +111,7 @@ if __name__ == '__main__':
     nx.draw_networkx_nodes(G, pos, nodelist=list1_n, node_color="orange", label="二级供水点")
     plt.legend()
     plt.show()
-    """
+    
     # 修正后的图
     H = nx.DiGraph()
     H.add_weighted_edges_from(list3)
