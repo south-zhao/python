@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65b4398a-d6a7-40b3-a354-7d277125a025" name="变更" comment="数学建模">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/建模/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/建模/1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/建模/水管优化图.py" beforeDir="false" afterPath="$PROJECT_DIR$/建模/水管优化图.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1209,7 +1208,7 @@
       <workItem from="1689950699062" duration="2049000" />
       <workItem from="1689984223900" duration="30800000" />
       <workItem from="1690026160511" duration="4592000" />
-      <workItem from="1690074901741" duration="4642000" />
+      <workItem from="1690074901741" duration="5024000" />
     </task>
     <task id="LOCAL-00054" summary="项目">
       <created>1672140019668</created>
@@ -1554,7 +1553,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686368815010</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1676,7 +1675,7 @@
     <SUITE FILE_PATH="coverage/Python$ch18_10.coverage" NAME="ch18_10 覆盖结果" MODIFIED="1679913238295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tk" />
     <SUITE FILE_PATH="coverage/Python$SymPy.coverage" NAME="初始SymPy 覆盖结果" MODIFIED="1682935805046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
     <SUITE FILE_PATH="coverage/python$numpy.coverage" NAME="初始numpy 覆盖结果" MODIFIED="1685983330593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
-    <SUITE FILE_PATH="coverage/python$.coverage" NAME="水管优化图 覆盖结果" MODIFIED="1690078978618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
+    <SUITE FILE_PATH="coverage/python$.coverage" NAME="水管优化图 覆盖结果" MODIFIED="1690079687134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
     <SUITE FILE_PATH="coverage/Python$ch9_4_1.coverage" NAME="ch9_4_1 覆盖结果" MODIFIED="1678933211740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tk" />
     <SUITE FILE_PATH="coverage/Python$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1682322964980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/其他" />
     <SUITE FILE_PATH="coverage/python$Game22.coverage" NAME="Game22 覆盖结果" MODIFIED="1686148007935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Game22-五子棋" />
@@ -1758,7 +1757,7 @@
     <SUITE FILE_PATH="coverage/Python$neo.coverage" NAME="neo数据库 覆盖结果" MODIFIED="1683336593909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/其他" />
     <SUITE FILE_PATH="coverage/Python$choose_page.coverage" NAME="choose_page 覆盖结果" MODIFIED="1682926805999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python大作业" />
     <SUITE FILE_PATH="coverage/python$re_demo.coverage" NAME="re_demo 覆盖结果" MODIFIED="1663490100535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/正则表达式" />
-    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 覆盖结果" MODIFIED="1690022420222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
+    <SUITE FILE_PATH="coverage/python$1.coverage" NAME="1 覆盖结果" MODIFIED="1690079861435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模" />
     <SUITE FILE_PATH="coverage/name_py$SucculentQuery.coverage" NAME="SucculentQuery 覆盖结果" MODIFIED="1671803220299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/python源码/70+爬虫脚本项目源码/多肉数据查询系统" />
     <SUITE FILE_PATH="coverage/name_py$matplotlib.coverage" NAME="matplotlib图 覆盖结果" MODIFIED="1668244358629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据分析" />
     <SUITE FILE_PATH="coverage/python$excel.coverage" NAME="excel读取 覆盖结果" MODIFIED="1685018329729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据分析" />
