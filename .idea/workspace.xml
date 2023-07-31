@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65b4398a-d6a7-40b3-a354-7d277125a025" name="变更" comment="数学建模">
+    <list default="true" id="65b4398a-d6a7-40b3-a354-7d277125a025" name="变更" comment="数学建模-偏微分方程">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/建模/回归拟合/question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/建模/回归拟合/question3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/建模/偏微分/question1.py" beforeDir="false" afterPath="$PROJECT_DIR$/建模/偏微分/question1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/建模/偏微分/question3.py" beforeDir="false" afterPath="$PROJECT_DIR$/建模/偏微分/question3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +83,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "south-zhao"
+  }
+}]]></component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="af8cdd19-90f1-459a-a73e-86fe64b57b18" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="47da0f46-804c-4d4c-b246-4c19acdbe5ec" />
-        <option name="url" value="https://github.com/south-zhao/Python.git" />
+        <option name="accountId" value="af8cdd19-90f1-459a-a73e-86fe64b57b18" />
+        <option name="url" value="https://github.com/south-zhao/python.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -165,7 +172,7 @@
       <recent name="C:\Users\xjiez\Desktop\Code\flask\作业" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.question3">
+  <component name="RunManager" selected="Python.question1 (1)">
     <configuration name="微分方程" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -857,10 +864,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.question1 (1)" />
         <item itemvalue="Python.question3" />
         <item itemvalue="Python.question2 (1)" />
         <item itemvalue="Python.numpy1" />
-        <item itemvalue="Python.question1 (1)" />
         <item itemvalue="Python.微分方程" />
       </list>
     </recent_temporary>
@@ -1269,7 +1276,7 @@
       <workItem from="1690692337122" duration="116000" />
       <workItem from="1690692461341" duration="322000" />
       <workItem from="1690692893516" duration="31597000" />
-      <workItem from="1690761789140" duration="3004000" />
+      <workItem from="1690761789140" duration="6002000" />
     </task>
     <task id="LOCAL-00054" summary="项目">
       <created>1672140019668</created>
@@ -1614,7 +1621,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686368815010</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1637,7 +1644,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../Django" />
     </ignored-roots>
-    <MESSAGE value="jieba" />
     <MESSAGE value="模糊图像" />
     <MESSAGE value="正则" />
     <MESSAGE value="文本转语音" />
@@ -1662,7 +1668,8 @@
     <MESSAGE value="数学建模-SIR" />
     <MESSAGE value="数学建模-K-means，Prime" />
     <MESSAGE value="数学建模" />
-    <option name="LAST_COMMIT_MESSAGE" value="数学建模" />
+    <MESSAGE value="数学建模-偏微分方程" />
+    <option name="LAST_COMMIT_MESSAGE" value="数学建模-偏微分方程" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1764,7 +1771,7 @@
     <SUITE FILE_PATH="coverage/Python$ch16_1.coverage" NAME="ch16_1 覆盖结果" MODIFIED="1680160478111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tk" />
     <SUITE FILE_PATH="coverage/Python$1.coverage" NAME="1 覆盖结果" MODIFIED="1684402146239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/正则表达式" />
     <SUITE FILE_PATH="coverage/Python$ch12_4.coverage" NAME="ch12_4 覆盖结果" MODIFIED="1679104577732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tk" />
-    <SUITE FILE_PATH="coverage/python$question1__1_.coverage" NAME="question1 (1) 覆盖结果" MODIFIED="1690718924962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模/偏微分" />
+    <SUITE FILE_PATH="coverage/python$question1__1_.coverage" NAME="question1 (1) 覆盖结果" MODIFIED="1690770762654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/建模/偏微分" />
     <SUITE FILE_PATH="coverage/name_py$os.coverage" NAME="os模块 覆盖结果" MODIFIED="1665212709667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件分类" />
     <SUITE FILE_PATH="coverage/Python$ch11_2.coverage" NAME="ch11_2 覆盖结果" MODIFIED="1678957792044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tk" />
     <SUITE FILE_PATH="coverage/Python$name.coverage" NAME="name 覆盖结果" MODIFIED="1682322903928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/其他" />

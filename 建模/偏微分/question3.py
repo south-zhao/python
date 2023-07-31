@@ -25,7 +25,7 @@ for i in range(Nt1):
 
 def ts(k1, k2, k3):
     li = []
-    for n in range(3, 14):
+    for n in range(3, 15):
         for x1 in range(int(n/3), n-2):
             for x2 in range(int(n/3), n - 1 - x1):
                 for i in range(1, Nt1):
