@@ -22,11 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65b4398a-d6a7-40b3-a354-7d277125a025" name="变更" comment="数学建模-偏微分方程">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/643e87fc-7a72-4f6d-89a4-40b0c03ac6c8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/643e87fc-7a72-4f6d-89a4-40b0c03ac6c8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="65b4398a-d6a7-40b3-a354-7d277125a025" name="变更" comment="python" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1283,6 +1279,7 @@
       <workItem from="1690960385522" duration="3102000" />
       <workItem from="1693098779595" duration="90000" />
       <workItem from="1693098873530" duration="11000" />
+      <workItem from="1693098885332" duration="426000" />
     </task>
     <task id="LOCAL-00054" summary="项目">
       <created>1672140019668</created>
@@ -1627,7 +1624,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686368815010</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1669,13 +1666,13 @@
     <MESSAGE value="大作业" />
     <MESSAGE value="建模" />
     <MESSAGE value="homework" />
-    <MESSAGE value="python" />
     <MESSAGE value="python作业" />
     <MESSAGE value="数学建模-SIR" />
     <MESSAGE value="数学建模-K-means，Prime" />
     <MESSAGE value="数学建模" />
     <MESSAGE value="数学建模-偏微分方程" />
-    <option name="LAST_COMMIT_MESSAGE" value="数学建模-偏微分方程" />
+    <MESSAGE value="python" />
+    <option name="LAST_COMMIT_MESSAGE" value="python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
