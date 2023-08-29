@@ -135,7 +135,7 @@ for i in level1:
     j = 0
     num_i = 0
     while num_i <= 6:
-        if d_order[j][0] not in list_t_s:
+        if d_order[j][0] not in list_o:
             list_o.append(d_order[j][0])
             l.append(d_order[j][0])
             num_i += 1
@@ -152,7 +152,7 @@ for i in level2:
     else:
         x = 4
     while num_i <= x:
-        if d_order[j][0] not in list_t_s:
+        if d_order[j][0] not in list_o:
             list_o.append(d_order[j][0])
             l.append(d_order[j][0])
             num_i += 1
@@ -165,7 +165,7 @@ for i in level3:
     j = 0
     num_i = 0
     while num_i <= 3:
-        if d_order[j][0] not in list_t_s:
+        if d_order[j][0] not in list_o:
             list_o.append(d_order[j][0])
             l.append(d_order[j][0])
             num_i += 1
