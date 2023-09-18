@@ -7,11 +7,9 @@
     Describe:
     -*- coding: utf-8 -*-
 """
-from snownlp import SnowNLP
+
 
 with open("唐诗人语料集29.txt", "r", encoding="utf-8") as f:
     data = f.readlines()
 
-s = SnowNLP(data[1])
-print(s.summary())
-print(s.sentences)
+
