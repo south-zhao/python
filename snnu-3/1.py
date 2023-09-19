@@ -7,9 +7,12 @@
     Describe:
     -*- coding: utf-8 -*-
 """
+import jieba.posseg as psg
 
 
 with open("唐诗人语料集29.txt", "r", encoding="utf-8") as f:
     data = f.readlines()
 
-
+seg = psg.cut(data[0])
+for i, j in seg:
+    print(i, j)

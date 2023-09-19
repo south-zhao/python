@@ -12,18 +12,15 @@ import numpy as np
 
 def sudoku_solve(N=9, input=None):
     def get_possible(MM, row, col):
-        if MM[row, col] > 0:
-            return MM[row, col]
-        else:
             # 行列上的各个值
-            t = np.unique(np.append(MM[row, :], MM[:, col]))
-            t1 = MM[int(row/3)*3: int(row/3)*3+3, int(col/3)*3: int(col/3)*3+3]
-            tt1 = np.append(t1[0], t1[1])
-            tt1 = np.append(tt1, t1[2])
-            tt1 = np.setdiff1d(ONE_N, tt1)
-            t = np.setdiff1d(ONE_N, t)  # 集合的差
-            t = np.intersect1d(t, tt1)
-            return t
+        t = np.unique(np.append(MM[row, :], MM[:, col]))
+        t1 = MM[int(row/3)*3: int(row/3)*3+3, int(col/3)*3: int(col/3)*3+3]
+        tt1 = np.append(t1[0], t1[1])
+        tt1 = np.append(tt1, t1[2])
+        tt1 = np.setdiff1d(ONE_N, tt1)
+        t = np.setdiff1d(ONE_N, t)  # 集合的差
+        t = np.intersect1d(t, tt1)
+        return t
 
     def isdone(MM):
         if MM is None:
@@ -91,6 +88,7 @@ def sudoku_solve(N=9, input=None):
     def sudoku(M):
         MM = M.copy()
         MM = set1(MM)
+
         if isdone(MM):
             return MM
 
@@ -117,25 +115,25 @@ def sudoku_solve(N=9, input=None):
     return sudoku(input)
 
 
-input = np.array([[8, 0, 0, 0, 0, 0, 0, 0, 0],
-                  [0, 0, 3, 6, 0, 0, 0, 0, 0],
-                  [0, 7, 0, 0, 9, 0, 2, 0, 0],
-                  [0, 5, 0, 0, 0, 7, 0, 0, 0],
-                  [0, 0, 0, 0, 4, 5, 7, 0, 0],
-                  [0, 0, 0, 1, 0, 0, 0, 3, 0],
-                  [0, 0, 1, 0, 0, 0, 0, 6, 8],
-                  [0, 0, 8, 5, 0, 0, 0, 1, 0],
-                  [0, 9, 0, 0, 0, 0, 4, 0, 0]])
+# input = np.array([[8, 0, 0, 0, 0, 0, 0, 0, 0],
+#                   [0, 0, 3, 6, 0, 0, 0, 0, 0],
+#                   [0, 7, 0, 0, 9, 0, 2, 0, 0],
+#                   [0, 5, 0, 0, 0, 7, 0, 0, 0],
+#                   [0, 0, 0, 0, 4, 5, 7, 0, 0],
+#                   [0, 0, 0, 1, 0, 0, 0, 3, 0],
+#                   [0, 0, 1, 0, 0, 0, 0, 6, 8],
+#                   [0, 0, 8, 5, 0, 0, 0, 1, 0],
+#                   [0, 9, 0, 0, 0, 0, 4, 0, 0]])
 
-# input = np.array([[0, 0, 5, 3, 0, 0, 0, 0, 0],
-#                   [8, 0, 0, 0, 0, 0, 0, 2, 0],
-#                   [0, 7, 0, 0, 1, 0, 5, 0, 0],
-#                   [4, 0, 0, 0, 0, 5, 3, 0, 0],
-#                   [0, 1, 0, 0, 7, 0, 0, 0, 6],
-#                   [0, 0, 3, 2, 0, 0, 0, 8, 0],
-#                   [0, 6, 0, 5, 0, 0, 0, 0, 9],
-#                   [0, 0, 4, 0, 0, 0, 0, 3, 0],
-#                   [0, 0, 0, 0, 0, 9, 7, 0, 0]])
+input = np.array([[0, 0, 5, 3, 0, 0, 0, 0, 0],
+                  [8, 0, 0, 0, 0, 0, 0, 2, 0],
+                  [0, 7, 0, 0, 1, 0, 5, 0, 0],
+                  [4, 0, 0, 0, 0, 5, 3, 0, 0],
+                  [0, 1, 0, 0, 7, 0, 0, 0, 6],
+                  [0, 0, 3, 2, 0, 0, 0, 8, 0],
+                  [0, 6, 0, 5, 0, 0, 0, 0, 9],
+                  [0, 0, 4, 0, 0, 0, 0, 3, 0],
+                  [0, 0, 0, 0, 0, 9, 7, 0, 0]])
 
 
 print(sudoku_solve(input=input))
