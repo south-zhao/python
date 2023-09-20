@@ -85,28 +85,55 @@ def sudoku_solve(N=9, input=None):
                             done = True
         return MM
 
+    # def sudoku(M):
+    #     MM = M.copy()
+    #     MM = set1(MM)
+    #
+    #     if isdone(MM):
+    #         return MM
+    #
+    #     if not islegal(MM):
+    #         return None
+    #
+    #     a, b = findsmallest(MM)
+    #     if a is None:
+    #         return None
+    #     t = get_possible(MM, a, b)  # 可能:
+    #     for ii in range(t.size):
+    #         MM[a, b] = t[ii]
+    #         Mtemp = sudoku(MM)
+    #         if Mtemp is None:
+    #             continue
+    #         else:
+    #             if isdone(Mtemp):
+    #                 return Mtemp
+    #     return None
+
     def sudoku(M):
-        MM = M.copy()
-        MM = set1(MM)
+        stack = [(M.copy(), 0, 0)]  # (当前状态, 当前行数, 当前列数)
 
-        if isdone(MM):
-            return MM
+        while stack:
+            M, row, col = stack.pop()
+            MM = M.copy()
+            MM = set1(MM)
 
-        if not islegal(MM):
-            return None
+            # 判断是否完成
+            if isdone(MM):
+                return MM
 
-        a, b = findsmallest(MM)
-        if a is None:
-            return None
-        t = get_possible(MM, a, b)  # 可能:
-        for ii in range(t.size):
-            MM[a, b] = t[ii]
-            Mtemp = sudoku(MM)
-            if Mtemp is None:
+            # 判断是否合法
+            if not islegal(MM):
                 continue
-            else:
-                if isdone(Mtemp):
-                    return Mtemp
+
+            a, b = findsmallest(MM)
+            if a is None:
+                continue
+
+            t = get_possible(MM, a, b)
+            for ii in range(t.size):
+                MM[a, b] = t[ii]
+                stack.append((MM.copy(), a, b))  # 将更新后的状态压入栈中
+
         return None
 
 

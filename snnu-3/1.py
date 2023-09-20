@@ -9,10 +9,17 @@
 """
 import jieba.posseg as psg
 
-
 with open("唐诗人语料集29.txt", "r", encoding="utf-8") as f:
-    data = f.readlines()
+    data = f.readlines()  # 14073
 
-seg = psg.cut(data[0])
+with open("stopwords.txt", "r", encoding="utf-8") as f:
+    stopwords = f.readlines()
+    stopword = set()
+    for i in stopwords:
+        i = i.replace("\n", "")
+        stopword.add(i)
+
+seg = psg.cut(data[1])
 for i, j in seg:
-    print(i, j)
+    if i not in stopword:
+        print(i)
