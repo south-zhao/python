@@ -8,25 +8,26 @@
     -*- coding: utf-8 -*-
 """
 from moviepy.editor import AudioFileClip
+import subprocess
+from vosk import Model, KaldiRecognizer, SetLogLevel
 
-# my_audio = AudioFileClip("9月20日.mp4")
-# my_audio.write_audiofile("9月20日.wav")
 
-
-def getSrt():
-    print("提取srt中...")
-    print("开始加载识别模型")
-    import subprocess
-    from vosk import Model, KaldiRecognizer, SetLogLevel
+def get():
+    # name = input("请输入当前目录下视频的名字:")
+    # my_audio = AudioFileClip(name)
+    # my_audio.write_audiofile(name.split(".")[0] + ".wav")
+    print("开始加载语音识别模型")
     SAMPLE_RATE = 16000
     SetLogLevel(-1)
     # 解压的模型文件，英文，中文用对应model
-    getCn = "vosk-model-en-us-0.22"
+    # getCn = "vosk-model-en-us-0.22"
+    getCn = "vosk-model-cn-0.22"
     model = Model(getCn)
     print("模型加载完毕,开始识别...")
     rec = KaldiRecognizer(model, SAMPLE_RATE)
     # 修改需要识别的语音文件路径
-    wavPath = "9月20日.wav"
+    # wavPath = name.split(".")[0] + ".wav"
+    wavPath = "1.wav"
     rec.SetWords(True)
     result = []
     with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
@@ -35,13 +36,14 @@ def getSrt():
                           stdout=subprocess.PIPE).stdout as stream:
         word = rec.SrtResult(stream)
         result.append(word)
-        print(word)
-    print(result)
+    print("开始生成srt文件")
     # 生成srt文件
-    output = open('9月20日.srt', 'w')
+    # output = open(name.split(".")[0] + '.srt', 'w')
+    output = open('1.srt', 'w')
     output.write("\n".join(result))
     output.close()
     print("srt输出完成")
 
 
-getSrt()
+if __name__ == '__main__':
+    get()

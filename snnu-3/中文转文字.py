@@ -22,7 +22,8 @@ def getSrt1():
     print("模型加载完毕,开始识别...")
     rec = KaldiRecognizer(model, SAMPLE_RATE)
     # 修改需要识别的语音文件路径
-    wavPath = "何明家-四声歌（慢速）.mp3"
+    # wavPath = "何明家-四声歌（慢速）.mp3"
+    wavPath = "1.MP3"
     rec.SetWords(True)
     result = []
     with subprocess.Popen(["ffmpeg", "-loglevel", "quiet", "-i",
